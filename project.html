@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+
+<h2>Feedback Form</h2>
+
+<form action="/submit_feedback" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+    <label for="feedback">Feedback:</label>
+    <textarea id="feedback" name="feedback" rows="4" placeholder="Enter your feedback here..." required></textarea>
+
+    <label for="phone">Phone Number (Optional):</label>
+    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+
+    <label for="rating">Rating (1-5 stars):</label>
+    <select id="rating" name="rating">
+        <option value="1">1 Star</option>
+        <option value="2">2 Stars</option>
+        <option value="3">3 Stars</option>
+        <option value="4">4 Stars</option>
+        <option value="5">5 Stars</option>
+    </select>
+
+    <label for="category">Feedback Category:</label>
+    <select id="category" name="category">
+        <option value="general">General</option>
+        <option value="product">Product</option>
+        <option value="service">Service</option>
+        <option value="other">Other</option>
+    </select>
+
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
